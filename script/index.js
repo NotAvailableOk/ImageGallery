@@ -58,7 +58,7 @@ function createGallery(galleryId, start, end, totalImages) {
 
       // Add click event listener
       img.addEventListener("click", () => {
-          window.location.href = `../html/card.html?image=${src}`;
+          window.location.href = `../ImageGallery/html/card.html?image=${src}`;
       });
 
       gallery.appendChild(img);
