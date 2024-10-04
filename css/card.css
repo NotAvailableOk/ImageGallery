@@ -1,0 +1,64 @@
+/* card.css */
+
+#card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+#close-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    width: 1rem;
+}
+
+#selected-image img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+
+
+
+
+#download-btn{
+    background-color: var(--arrow-color);
+    color: (--text-color);
+    border-color: black;
+    margin-right: 1rem;
+}
+#share-btn{
+    background-color: rgb(240, 114, 114);
+}
+
+
+@media (width>900px) {
+
+    #selected-image {
+        height: 80vh;
+    }
+    #selected-image img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #card-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+

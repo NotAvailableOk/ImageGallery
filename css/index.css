@@ -1,0 +1,142 @@
+:root {
+  --background-color: rgb(255, 255, 255);
+  --text-color: #000000;
+  --highlight-color: #000000;
+  --button-bg-color: rgb(249, 123, 77);
+  --button-border-color: #000000;
+  --button-hover-bg-color: rgb(112, 188, 255);
+  --heading-color: rgb(50, 50, 150);
+  
+  --arrow-color: rgb(71, 106, 18);
+  --image-border-radius: 5px;
+}
+
+:root.dark-mode {
+  --background-color: rgb(46, 46, 46);
+  --text-color: #ffffff;
+  --highlight-color: aliceblue;
+  --button-bg-color: rgb(101, 69, 7);
+  --button-border-color: aliceblue;
+  --button-hover-bg-color: rgb(7, 55, 96);
+  --heading-color: rgb(255, 178, 24);
+  --arrow-color: green;
+}
+
+
+
+/* General Styles */
+* {
+  background-color: var(--background-color);
+  color: var(--highlight-color);
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Arrow Icon Hover */
+.fa-arrow-right:hover, i {
+  cursor: pointer;
+}
+
+/* Layout Styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 23%;
+  max-width: 23%;
+  padding: 10px 1%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: var(--image-border-radius);
+}
+
+.column img:hover{
+  cursor: pointer;
+}
+
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.right-nav {
+  color: var(--highlight-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  margin: 0px;
+  gap: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .column {
+      flex: 45%;
+      max-width: 45%;
+  }
+  span {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+      flex: 40%;
+      max-width: 100%;
+  }
+}
+
+/* Navigation Links */
+.right-nav a {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
+/* Button Styles */
+button {
+  width: 9rem;
+  height: 2.5rem;
+  font-size: large;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--button-bg-color);
+  border-color: var(--button-border-color);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--button-hover-bg-color);
+  width: 9.3rem;
+  height: 2.7rem;
+}
+
+/* Headings */
+h3 {
+  color: var(--heading-color);
+}
+
+/* Arrow Icon */
+.fa-arrow-right {
+  color: var(--arrow-color);
+}
+
+
